@@ -1,0 +1,43 @@
+$font_body: "Heebo";
+$font_header: "Merienda One";
+
+$main_color: #1a7f72;
+
+$header_height: 130px;
+
+* {
+    line-height: 130%;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    font-family: $font_body;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+}
+h1 {
+    font-family: $font_header;
+    font-size: 68px;
+    font-weight: 400;
+}
+h2 {
+    font-family: $font_header;
+    font-size: 54px;
+}
+main{
+    background: linear-gradient(90deg, #edfbf9 0%, #d7f1eb 100%);
+}
+.container{
+    width: 100%;
+    padding: 0 7.8%;
+}
+.btn {
+    display: block;
+    border-radius: 50px;
+    color: #FFF; 
+    background: linear-gradient(180deg, #259385 0%, #159685 100%);
+    box-shadow: 0px 20px 40px 0px rgba(21, 113, 101, 0.2);
+}

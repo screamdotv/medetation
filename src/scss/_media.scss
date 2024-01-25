@@ -1,0 +1,187 @@
+@media screen and (max-width: 1599px) {
+    .header {
+        &__menu {
+            li {
+                height: 75px;
+            }
+            a {
+                font-size: 24px;
+                &:hover:after {
+                    height: 5px;
+                }
+            }
+        }
+        &__link-logo {
+            .logo {
+                max-width: 80px;
+            }
+        }
+    }
+    .hero-section {
+        padding-top: 71px;
+        &__container {
+            padding-top: 50px;
+        }
+    }
+}
+@media screen and (max-width: 1399px) {
+    .header {
+    }
+}
+@media screen and (max-width: 1199px) {
+    $header_height: 70px;
+
+    .header {
+        &__link-logo {
+            .logo {
+                max-width: 80px;
+            }
+        }
+        &__menu {
+            li {
+                height: $header_height;
+            }
+            a {
+                font-size: 20px;
+                &:hover:after {
+                    height: 5px;
+                }
+            }
+        }
+    }
+    .hero-section {
+        &__content {
+            .btn-start {
+                padding: 15px 70px;
+                font-size: 22px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .header {
+    }
+    .hero-section {
+        &__container {
+            padding-top: 50px;
+        }
+        &__content {
+            h1 {
+                font-size: 50px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    body.lock {
+        overflow: hidden;
+    }
+    .header {
+        &__link-logo{
+           
+            .logo {
+                max-width: 60px;
+                min-height: 50px;
+                width: 90%;
+            }
+        }
+        height: 50px;
+        &__menu {
+            position: fixed;
+            top: 50px;
+            left: -100%;
+            height: 100%;
+            background-color: $main_color;
+            background-image: url("../img/hero-girl.svg");
+            background-repeat: no-repeat;
+            background-size: 270px;
+            background-position: right 0 top 170px;
+            transition: all 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86) 0s;
+            overflow: auto;
+            z-index: 1;
+            ul {
+                display: block;
+            }
+            li {
+                justify-content: start;
+                max-width: 150px;
+                padding-left: 7.8%;
+            }
+            a {
+                color: #fff;
+                &:hover {
+                    color: #fff;
+                    text-shadow:
+                        0 0 0.9px #fff,
+                        0 0 0.9px #fff;
+                }
+                &:hover:after {
+                    display: none;
+                }
+            }
+        }
+        &__menu.active {
+            left: 0;
+        }
+        &__burger {
+            position: relative;
+            display: block;
+            max-width: 50px;
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+
+            & span {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 13px;
+                width: 100%;
+                height: 5px;
+                border-radius: 20px;
+                background-color: $main_color;
+                transition: all 0.3s ease 0s;
+            }
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 5px;
+                border-radius: 20px;
+                background-color: $main_color;
+                transition: all 0.3s ease 0s;
+            }
+            &::before {
+                top: 0px;
+            }
+            &::after {
+                bottom: 0;
+            }
+
+            &.active span {
+                transform: scale(0);
+            }
+            &.active::before {
+                top: 12px;
+                transform: rotateZ(-45deg);
+            }
+            &.active::after {
+                bottom: 12px;
+                transform: rotateZ(45deg);
+            }
+        }
+    }
+    .hero-section {
+        padding-top: 51px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .header {
+    }
+}

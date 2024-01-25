@@ -1,0 +1,64 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    &__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 2;
+    }
+    &__link-logo {
+        margin-right: 20px;
+        .logo {
+            max-width: 148px;
+            max-height: 119px;
+            width: 90%;
+        }
+    }
+    &__menu {
+        max-width: 1160px;
+        width: 100%;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        li {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 131px;
+            width: 100%;
+            height: 130px;
+        }
+        a {
+            font-size: 28px;
+            transition: text-shadow 0.3s;
+            &:hover {
+                color: $main_color;
+                text-shadow:
+                    0 0 0.9px $main_color,
+                    0 0 0.9px $main_color;
+            }
+            &:hover:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 10px;
+                background-image: url("../img/underline.svg"); /* Цвет линии снизу */
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        }
+    }
+    &__burger {
+        display: none;
+    }
+}

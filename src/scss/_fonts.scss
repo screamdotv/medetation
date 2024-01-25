@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Merienda One';
+    src: url('../fonts/MeriendaOne/MeriendaOne-Regular.eot');
+    src: local('Merienda One'), local('MeriendaOne-Regular'),
+        url('../fonts/MeriendaOne/MeriendaOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MeriendaOne/MeriendaOne-Regular.woff2') format('woff2'),
+        url('../fonts/MeriendaOne/MeriendaOne-Regular.woff') format('woff'),
+        url('../fonts/MeriendaOne/MeriendaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Heebo';
+    src: url('../fonts/Heebo/Heebo-Regular.eot');
+    src: local('Heebo-Regular'),
+        url('../fonts/Heebo/Heebo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Heebo/Heebo-Regular.woff2') format('woff2'),
+        url('../fonts/Heebo/Heebo-Regular.woff') format('woff'),
+        url('../fonts/Heebo/Heebo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Heebo';
+    src: url('../fonts/Heebo/Heebo-Medium.eot');
+    src: local('Heebo-Medium'),
+        url('../fonts/Heebo/Heebo-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Heebo/Heebo-Medium.woff2') format('woff2'),
+        url('../fonts/Heebo/Heebo-Medium.woff') format('woff'),
+        url('../fonts/Heebo/Heebo-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
